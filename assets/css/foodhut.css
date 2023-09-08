@@ -160,13 +160,11 @@ sup {
 }
 
 a {
-  color: #ff214f;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #d4002c;
   text-decoration: none;
 }
 

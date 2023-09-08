@@ -5,6 +5,12 @@
   font-weight: normal;
   font-style: normal;
 }
+
+:root{
+  --cor1: #27B13F;
+  --cor2: #00960c;
+}
+
 body {
   font-family: "Merriweather", serif;
   font-size: 18px;
@@ -17,13 +23,13 @@ body.fh5co-overflow {
 }
 
 a {
-  color: #fb6e14;
+  color: var(--cor1);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:focus, a:active {
-  color: #bf4c03;
+  color: var(--cor2);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -63,21 +69,21 @@ p {
 }
 
 .btn-primary {
-  background: #fb6e14;
+  background: var(--cor1);
   color: #fff;
-  border: 2px solid #fb6e14;
+  border: 2px solid var(--cor1);
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #f16104 !important;
-  border-color: #f16104 !important;
+  background: var(--cor2) !important;
+  border-color: var(--cor2) !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #fb6e14;
-  border: 2px solid #fb6e14;
+  color: var(--cor1);
+  border: 2px solid var(--cor1);
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #fb6e14;
+  background: var(--cor1);
   color: #fff;
 }
 
@@ -182,7 +188,7 @@ p {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #fb6e14;
+  border-color: var(--cor1);
 }
 
 /*
@@ -209,8 +215,8 @@ p {
 #fh5co-home .flexslider .fh5co-text h1 {
   margin: 0;
   padding: 0;
-  font-family: "Playfair Display", serif;
-  font-size: 300px;
+  font-family: "Arial", serif;
+  font-size: 150px;
   font-weight: 700;
   font-style: italic;
   color: #fff;
@@ -246,7 +252,7 @@ p {
   text-transform: none;
 }
 #fh5co-home .flexslider .fh5co-text h2 a {
-  color: #fb6e14;
+  color: var(--cor1);
 }
 #fh5co-home .flexslider .slides li {
   background-repeat: no-repeat;
@@ -321,7 +327,7 @@ p {
 .fh5co-main-nav .fh5co-menu-1 a.active,
 .fh5co-main-nav .fh5co-menu-2 a.active,
 .fh5co-main-nav .fh5co-logo a.active {
-  color: #fb6e14;
+  color: var(--cor1);
 }
 .fh5co-main-nav .fh5co-menu-1 {
   text-align: right;
@@ -367,7 +373,7 @@ p {
   width: 40px;
   height: 2px;
   left: 50%;
-  background: #fb6e14;
+  background: var(--cor1);
   margin-left: -20px;
 }
 .fh5co-heading .sub-heading {
@@ -430,7 +436,7 @@ p {
   width: 40px;
   height: 2px;
   left: 50%;
-  background: #fb6e14;
+  background: var(--cor1);
   margin-left: -20px;
 }
 #fh5co-about .fh5co-text p {
@@ -466,74 +472,6 @@ p {
     width: 100%;
     min-height: 300px;
   }
-}
-
-#fh5co-sayings {
-  padding: 7em 0;
-}
-@media screen and (max-width: 768px) {
-  #fh5co-sayings {
-    padding: 5em 0;
-  }
-}
-#fh5co-sayings .flexslider .slides li {
-  font-size: 40px;
-  line-height: 1.5;
-}
-#fh5co-sayings .flexslider .slides li blockquote {
-  padding-left: 0;
-  border-left: none;
-}
-@media screen and (max-width: 768px) {
-  #fh5co-sayings .flexslider .slides li blockquote {
-    padding: 0 20px;
-  }
-}
-#fh5co-sayings .flexslider .slides li blockquote p {
-  font-size: 40px;
-  line-height: 1.5;
-}
-@media screen and (max-width: 768px) {
-  #fh5co-sayings .flexslider .slides li blockquote p {
-    font-size: 20px;
-    line-height: 1.5;
-  }
-}
-#fh5co-sayings .flexslider .slides li blockquote p.quote-author {
-  font-size: 20px;
-  color: gray;
-}
-@media screen and (max-width: 768px) {
-  #fh5co-sayings .flexslider .slides li blockquote p.quote-author {
-    font-size: 18px;
-  }
-}
-#fh5co-sayings .flexslider .flex-control-paging {
-  position: relative;
-}
-#fh5co-sayings .flexslider .flex-control-paging.flex-control-nav {
-  bottom: -70px;
-}
-@media screen and (max-width: 768px) {
-  #fh5co-sayings .flexslider .flex-control-paging.flex-control-nav {
-    bottom: -60px;
-  }
-}
-#fh5co-sayings .flexslider .flex-control-paging li a {
-  width: 14px;
-  height: 14px;
-  background: rgba(0, 0, 0, 0.2);
-  box-shadow: none;
-}
-#fh5co-sayings .flexslider .flex-control-paging li a:active, #fh5co-sayings .flexslider .flex-control-paging li a:focus {
-  outline: none;
-}
-#fh5co-sayings .flexslider .flex-control-paging li a.flex-active {
-  top: 2px;
-  position: relative;
-  background: transparent;
-  box-shadow: none;
-  border: 2px solid #fb6e14;
 }
 
 #fh5co-featured {
@@ -595,7 +533,7 @@ p {
   height: 2px;
   left: 50%;
   margin-left: -20px;
-  background: #fb6e14;
+  background: var(--cor1);
 }
 #fh5co-featured .fh5co-grid .arrow-left:before, #fh5co-featured .fh5co-grid .arrow-left::before {
   content: "";
@@ -879,7 +817,7 @@ p {
   width: 20%;
   text-align: right;
   font-size: 20px;
-  color: #fb6e14;
+  color: var(--cor1);
 }
 
 #fh5co-events {
@@ -896,10 +834,8 @@ p {
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.7);
-  z-index: 9;
 }
 #fh5co-events > .container {
-  z-index: 10;
   position: relative;
 }
 #fh5co-events .fh5co-heading .heading {
@@ -941,11 +877,9 @@ p {
   bottom: 15px;
   right: 15px;
   left: 15px;
-  z-index: 0;
 }
 #fh5co-events .fh5co-event h3, #fh5co-events .fh5co-event .fh5co-event-meta, #fh5co-events .fh5co-event p, #fh5co-events .fh5co-event .btn {
   position: relative;
-  z-index: 2;
 }
 #fh5co-events .fh5co-event h3 {
   padding: 0;
@@ -960,7 +894,7 @@ p {
 }
 #fh5co-events .fh5co-event .fh5co-event-meta:after, #fh5co-events .fh5co-event .fh5co-event-meta::after {
   background: #bfbfbf;
-  background: #fb6e14;
+  background: var(--cor1);
   content: "";
   position: absolute;
   left: 50%;
@@ -1042,7 +976,6 @@ p {
 
 #fh5co-container {
   position: relative;
-  z-index: 10;
 }
 
 #fh5co-footer {
@@ -1128,10 +1061,10 @@ p {
 #fh5co-offcanvas a:hover, #fh5co-offcanvas a:focus, #fh5co-offcanvas a:active {
   outline: none;
   text-decoration: none;
-  color: #fb6e14;
+  color: var(--cor1);
 }
 #fh5co-offcanvas a.active {
-  color: #fb6e14;
+  color: var(--cor1);
 }
 @media screen and (max-width: 768px) {
   #fh5co-offcanvas {
@@ -1288,10 +1221,10 @@ p {
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.7);
-  z-index: 9;
+
 }
 #fh5co-type > .container {
-  z-index: 10;
+
   position: relative;
 }
 #fh5co-type .fh5co-type {
@@ -1354,4 +1287,8 @@ p {
   padding-bottom: 40px;
 }
 
-/*# sourceMappingURL=style.css.map */
+.logo{
+  margin-top: 10px;
+  height: 5rem;
+  width: 10rem;
+}
